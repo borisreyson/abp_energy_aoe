@@ -51,6 +51,8 @@ flutter:
   assets:
     - assets/images/abp.png
     - assets/images/ic_abp.png
+    - assets/images/abp_60x60.png
+    - assets/images/abp_ic.png
   # To add assets to your application, add an assets section, like this:
 
 

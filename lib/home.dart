@@ -15,6 +15,7 @@ class _HomeApssState extends State<HomeApss> {
         appBar: AppBar(
           title: Text('PT Alamjaya Bara Pratama'),
           backgroundColor: Colors.blue ,
+
         ),
         body: SingleChildScrollView(
 

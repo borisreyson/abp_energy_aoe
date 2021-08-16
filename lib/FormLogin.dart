@@ -17,14 +17,15 @@ class FormLogin extends StatelessWidget {
           ),
           //CONTAINER KEDUA BERISI IMAGE SEPERTI CASE SEBELUMNYA PENJELASANNYA
           Container(
-            height: 200,
+            height: 150,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/ic_abp.png'),
-                fit: BoxFit.cover,
+                fit: BoxFit.contain ,
               ),
-color: Colors.white10
+              color: Colors.white10
             ),
+            margin: EdgeInsets.only(top: 50.0),
           ),
           //BAGIAN INI KITA GUNAKAN POSITIONED UNTUK MENGATUR SUDUTNYA, JIKA MASIH BINGUNG SOAL MATERI INI BACA NOTE DIBAWAH.
           Positioned(
@@ -47,7 +48,7 @@ color: Colors.white10
                       Padding(
                         padding: const EdgeInsets.only(top: 10),
                         child: Text(
-                          "Login Form",
+                          "Login",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 25,
@@ -59,7 +60,7 @@ color: Colors.white10
                         //DIMANA DEKORASINYA PADA SIFFUX BERARTI AKHIR BERISI ICON EMAIL BERWARNA PINK
                         decoration: InputDecoration(
                           suffixIcon: Icon(
-                            Icons.email,
+                            Icons.person,
                             color: Colors.pink[200],
                           ),
                           //KETIKA INPUTAN TERSEBUT DIKLIK MAKA AKAN MEMBUAT UNDERLINE
@@ -69,7 +70,7 @@ color: Colors.white10
                               color: Colors.pinkAccent,
                             ),
                           ),
-                          labelText: "Email: ", //SET LABELNYA
+                          labelText: "Username: ", //SET LABELNYA
                           //DAN SET STYLE DARI LABEL, CARA KERJANYA SAMA DENGNA TEXT STYLE KETIKA DISEMATKAN PADA TEXT() WIDGET
                           labelStyle: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -80,7 +81,7 @@ color: Colors.white10
                       TextField(
                         decoration: InputDecoration(
                           suffixIcon: Icon(
-                            Icons.security,
+                            Icons.vpn_key,
                             color: Colors.pink[200],
                           ),
                           focusedBorder: UnderlineInputBorder(
