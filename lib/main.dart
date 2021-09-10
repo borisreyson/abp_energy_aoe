@@ -1,5 +1,5 @@
-import 'package:abp_energy_aoe/home/home.dart';
-import 'package:abp_energy_aoe/login.dart';
+import 'package:abp_energy_aoe/Home/home.dart';
+import 'package:abp_energy_aoe/Auth/login.dart';
 import 'package:flutter/material.dart';
 import "package:flutter/services.dart";
 
@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/':(context) => LoginForm(),
-        '/home':(context) => HomeApss()
+        '/home':(context) => HomeApss(),
+        '/login':(context) => LoginForm(),
+        '/register':(context) => LoginForm()
 
       },
     );
