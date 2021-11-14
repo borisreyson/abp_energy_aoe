@@ -1,5 +1,8 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 TextEditingController usernameCtr = TextEditingController();
 TextEditingController passwordCtr = TextEditingController();
@@ -174,6 +177,7 @@ class _FormLoginState extends State<FormLogin> {
                                 padding: EdgeInsets.only(left: 10.0),
                               )
                               ),
+                              // NotificationPage(),
                             ],
                           ),
                           width: MediaQuery.of(context).size.width,
@@ -212,3 +216,17 @@ void visible(){
     _passwordDisable = !_passwordDisable;
   }
 }
+// class NotificationPage extends StatefulWidget {
+//   @override
+//   // State<StatefulWidget> createState() => NotificationPageState();
+// }
+// class NotificationPageState extends State<NotificationPage>{
+//   FirebaseMessaging fm = FirebaseMessaging.instance;
+//   NotificationPageState(){
+//     // fm.configure();
+//   }
+//   // @override
+//   // Widget build(BuildContext context) {
+//   //
+//   // }
+// }

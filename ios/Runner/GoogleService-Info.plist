@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>598125194642-3prcuqhhobsd1nmqq42uhp7r2thft3at.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.598125194642-3prcuqhhobsd1nmqq42uhp7r2thft3at</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>598125194642-aejjo5fgro9e856f1c3inj8h6qjisfe9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYChkhMwUMilvh1hNgbBpgt7S0VMVrhCk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>598125194642</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.misit.abpaio</string>
+	<key>PROJECT_ID</key>
+	<string>misit-service</string>
+	<key>STORAGE_BUCKET</key>
+	<string>misit-service.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:598125194642:ios:f5865932ed1e82e0e8654b</string>
+	<key>DATABASE_URL</key>
+	<string>https://misit-service.firebaseio.com</string>
+</dict>
+</plist>
