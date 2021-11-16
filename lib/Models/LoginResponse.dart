@@ -1,63 +1,63 @@
-class LoginRespnse {
-  bool success;
-  User user;
-
-  LoginRespnse({this.success, required this.user});
-
-  LoginRespnse.fromJson(Map<String, dynamic> json) {
+class LoginResponse {
+  LoginResponse({
+    required this.success,
+    required this.user,
+  });
+  late final bool success;
+  late final User user;
+  
+  LoginResponse.fromJson(Map<String, dynamic> json){
     success = json['success'];
-    user = json['user'] != null ? new User.fromJson(json['user']) : null;
+    user = User.fromJson(json['user']);
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['success'] = this.success;
-    if (this.user != null) {
-      data['user'] = this.user.toJson();
-    }
-    return data;
+    final _data = <String, dynamic>{};
+    _data['success'] = success;
+    _data['user'] = user.toJson();
+    return _data;
   }
 }
 
 class User {
-  int idUser;
-  String username;
-  String password;
-  String namaLengkap;
-  String email;
-  String department;
-  String section;
-  String level;
-  String idSession;
-  int status;
-  Null ttd;
-  String rule;
-  String tglentry;
-  String nik;
-  int perusahaan;
-  String photoProfile;
-  String userUpdate;
-
-  User(
-      {this.idUser,
-      this.username,
-      this.password,
-      this.namaLengkap,
-      this.email,
-      this.department,
-      this.section,
-      this.level,
-      this.idSession,
-      this.status,
-      this.ttd,
-      this.rule,
-      this.tglentry,
-      this.nik,
-      this.perusahaan,
-      this.photoProfile,
-      this.userUpdate});
-
-  User.fromJson(Map<String, dynamic> json) {
+  User({
+    required this.idUser,
+    required this.username,
+    required this.password,
+    required this.namaLengkap,
+    required this.email,
+    required this.department,
+    required this.section,
+    required this.level,
+    required this.idSession,
+    required this.status,
+    required this.ttd,
+    required this.rule,
+    required this.tglentry,
+    required this.nik,
+    required this.perusahaan,
+    required this.photoProfile,
+    required this.userUpdate,
+  });
+  late final int idUser;
+  late final String username;
+  late final String password;
+  late final String namaLengkap;
+  late final String email;
+  late final String department;
+  late final String section;
+  late final String level;
+  late final String idSession;
+  late final int status;
+  late final Null ttd;
+  late final String rule;
+  late final String tglentry;
+  late final String nik;
+  late final int perusahaan;
+  late final String photoProfile;
+  late final String userUpdate;
+  
+  User.fromJson(Map<String, dynamic> json){
     idUser = json['id_user'];
     username = json['username'];
     password = json['password'];
@@ -78,24 +78,24 @@ class User {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id_user'] = this.idUser;
-    data['username'] = this.username;
-    data['password'] = this.password;
-    data['nama_lengkap'] = this.namaLengkap;
-    data['email'] = this.email;
-    data['department'] = this.department;
-    data['section'] = this.section;
-    data['level'] = this.level;
-    data['id_session'] = this.idSession;
-    data['status'] = this.status;
-    data['ttd'] = this.ttd;
-    data['rule'] = this.rule;
-    data['tglentry'] = this.tglentry;
-    data['nik'] = this.nik;
-    data['perusahaan'] = this.perusahaan;
-    data['photo_profile'] = this.photoProfile;
-    data['user_update'] = this.userUpdate;
-    return data;
+    final _data = <String, dynamic>{};
+    _data['id_user'] = idUser;
+    _data['username'] = username;
+    _data['password'] = password;
+    _data['nama_lengkap'] = namaLengkap;
+    _data['email'] = email;
+    _data['department'] = department;
+    _data['section'] = section;
+    _data['level'] = level;
+    _data['id_session'] = idSession;
+    _data['status'] = status;
+    _data['ttd'] = ttd;
+    _data['rule'] = rule;
+    _data['tglentry'] = tglentry;
+    _data['nik'] = nik;
+    _data['perusahaan'] = perusahaan;
+    _data['photo_profile'] = photoProfile;
+    _data['user_update'] = userUpdate;
+    return _data;
   }
 }

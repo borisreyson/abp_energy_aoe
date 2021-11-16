@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:abp_energy_aoe/Models/LoginResponse.dart';
 import 'package:abp_energy_aoe/Models/ResponseCsrfToken.dart';
 import 'package:http/http.dart' as http;
 
@@ -13,12 +14,13 @@ class ApiServices {
         throw Exception('Failed to load token');
       }
     }
-    static Future<ResponseCsrfToken> loginSubmit() async {
+    
+    static Future<LoginResponse> loginSubmit() async {
       final response = await http.post(Uri.parse("$_baseUrl/flutter/api/login/validate"),
           headers: {"Accept": "application/json"});
       if(response.statusCode == 200){
         final json = jsonDecode(response.body);
-        return ResponseCsrfToken.fromJson(json);
+        return LoginResponse.fromJson(json);
       }else{
         throw Exception('Failed to load token');
       }
