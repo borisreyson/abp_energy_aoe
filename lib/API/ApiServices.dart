@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:abp_energy_aoe/Models/LoginResponse.dart';
-import 'package:abp_energy_aoe/Models/ResponseCsrfToken.dart';
+import 'package:abp_energy_aoe/model/LoginResponse.dart';
+import 'package:abp_energy_aoe/model/ResponseCsrfToken.dart';
 import 'package:http/http.dart' as http;
 
 class ApiServices {
