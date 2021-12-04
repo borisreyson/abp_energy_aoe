@@ -20,13 +20,14 @@ class _FormLoginState extends State<FormLogin> {
   PostLogin? postLogins;
   SharedPreferences? sharedPref;
   int? isLogin;
-  bool _passwordVisible = false;
+  bool _passwordVisible = true;
   TextEditingController _usernameController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   RoundedLoadingButtonController _roundedController =
       RoundedLoadingButtonController();
   @override
   void initState() {
+    _passwordVisible = true;
     getPref(context);
     _usernameFocus = FocusNode();
     _passwordFocus = FocusNode();
@@ -66,6 +67,7 @@ class _FormLoginState extends State<FormLogin> {
             ScaffoldMessenger.of(context)
                 .showSnackBar(SnackBar(content: Text("Login Berhasil!!")));
             Future.delayed(Duration(milliseconds: 1000), () {
+              Navigator.maybePop(context);
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (BuildContext context) => HomePage()));
             });
