@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
   _mainPage(){
     if(Platform.isAndroid){
       AnimatedSplashScreen(splash: Image.asset('assets/images/ic_abp.png'),duration: 1500,splashTransition: SplashTransition.scaleTransition, nextScreen: Splash());
-
       // Splash();
     }else if(Platform.isIOS){
       AnimatedSplashScreen(splash: Image.asset('assets/images/ic_abp.png'),duration: 1500,splashTransition: SplashTransition.scaleTransition, nextScreen: Splash());
