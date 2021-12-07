@@ -1,6 +1,6 @@
 import 'package:abp_energy_aoe/model/LoginModel.dart';
-import 'package:abp_energy_aoe/screens/auth/register.dart';
 import 'package:abp_energy_aoe/screens/page/home.dart';
+import 'package:abp_energy_aoe/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
@@ -137,7 +137,7 @@ class _FormLoginState extends State<FormLogin> {
         leading: InkWell(
           child: Icon(Icons.arrow_back_ios_new),
           onTap: () {
-            Navigator.maybePop(context);
+            Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>Splash()));
           },
         ),
       ),
